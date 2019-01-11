@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="night" rowHeight="105" id="KGk-i7-Jjw" customClass="NightClassTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="countdown" translatesAutoresizingMaskIntoConstraints="NO" id="BOc-7R-isg">
+                        <rect key="frame" x="12" y="5" width="28" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="7Pt-aF-Y9b"/>
+                            <constraint firstAttribute="width" constant="28" id="w7T-pH-cfe"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="晚上" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITl-VM-Mkf">
+                        <rect key="frame" x="46" y="10" width="45" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="Ra8-Qb-nKA"/>
+                            <constraint firstAttribute="height" constant="25" id="xXl-Oc-54e"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第8节 19:00-19:45" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2nq-ve-R3B">
+                        <rect key="frame" x="12" y="45" width="136" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="136" id="oFj-Wz-XWx"/>
+                            <constraint firstAttribute="height" constant="21" id="wfj-zD-dPi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="LabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ERc-fW-uxk">
+                        <rect key="frame" x="174" y="33" width="123" height="60"/>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第9节 19:50-20:35" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDh-jP-O19">
+                        <rect key="frame" x="8" y="74" width="141" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="141" id="Aph-Vz-buK"/>
+                            <constraint firstAttribute="height" constant="21" id="tNw-Zv-xb5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zDh-jP-O19" firstAttribute="top" secondItem="2nq-ve-R3B" secondAttribute="bottom" constant="8" id="HVm-cN-6W2"/>
+                    <constraint firstItem="BOc-7R-isg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-3" id="Ltz-FN-kq6"/>
+                    <constraint firstItem="ITl-VM-Mkf" firstAttribute="leading" secondItem="BOc-7R-isg" secondAttribute="trailing" constant="6" id="TbG-jU-NqH"/>
+                    <constraint firstItem="ERc-fW-uxk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="25" id="VT6-Ep-Mbn"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ERc-fW-uxk" secondAttribute="bottom" constant="3" id="VmO-HA-Hge"/>
+                    <constraint firstItem="2nq-ve-R3B" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="4" id="b3O-JJ-C6j"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ERc-fW-uxk" secondAttribute="trailing" constant="15" id="cxX-gM-PkD"/>
+                    <constraint firstItem="zDh-jP-O19" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="dVe-pu-ffY"/>
+                    <constraint firstItem="BOc-7R-isg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="4" id="dhX-6h-dDu"/>
+                    <constraint firstItem="ERc-fW-uxk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="25" id="h1q-Qj-KBt"/>
+                    <constraint firstItem="ITl-VM-Mkf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="pRZ-Jb-JA0"/>
+                    <constraint firstItem="2nq-ve-R3B" firstAttribute="top" secondItem="BOc-7R-isg" secondAttribute="bottom" constant="8" id="xba-tt-32F"/>
+                    <constraint firstItem="ERc-fW-uxk" firstAttribute="leading" secondItem="zDh-jP-O19" secondAttribute="trailing" constant="25" id="zko-pZ-6BC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="courseLable" destination="ERc-fW-uxk" id="mJV-ha-7H1"/>
+            </connections>
+            <point key="canvasLocation" x="320" y="369.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="countdown" width="28" height="32"/>
+    </resources>
+</document>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <title>title</title>
+    <style>
+        body {}
+
+        header {
+            padding: 0.5rem 1rem;
+            white-space: nowrap;
+            border-bottom: 1px solid gray;
+        }
+
+        .back {
+            float: left;
+        }
+
+        section {
+            background: white;
+            padding: 1rem;
+            border: 1px solid gray;
+            margin-bottom: 2rem;
+        }
+
+        input {
+            border-width: 0;
+            border-bottom-width: 1px;
+            width: 5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="back">
+            X
+        </div>
+        <div class="title" align="center">
+            通关
+        </div>
+    </header>
+    <section>
+        <p>
+            知识点：四则运算 乘除法
+        </p>
+        <p>
+            已有10人作答此题，其中8人作对；
+        </p>
+    </section>
+    <section>
+        <h3><strong>读一读，算一算</strong></h3>
+        <p>每顶帽子18元，买3顶多少钱</p>
+        <p>18 x 3 = <input type="text" name="" id="a1" value="" placeholder="请填写">元</p>
+        <p>苹果每千克10元，买5千克多少元</p>
+        <p>10 x 5 = <input type="text" name="" id="a2" value="" placeholder="请填写">元</p>
+        <p>每件商品的价格叫做<input type="text" name="" id="a3" value="" placeholder="请填写">；买了多少叫做<input type="text" name="" id="a4" value="" placeholder="请填写">；</p>
+        <p>一共多少叫做<input type="text" name="" id="a5" value="" placeholder="请填写">；</p>
+    </section>
+    <footer align="center">
+      <button type="button" name="button" onclick="showAnswer();">提交</button>
+    </footer>
+</body>
+<script type="text/javascript">
+    function getAnswers() {
+        var a1 = document.getElementById('a1').value;
+        var a2 = document.getElementById('a2').value;
+        var a3 = document.getElementById('a3').value;
+        var a4 = document.getElementById('a4').value;
+        var a5 = document.getElementById('a5').value;
+        return a1 + '_' + a2 + '_' + a3 + '_' + a4 + '_' + a5;
+    }
+    function showAnswer(){
+      alert(getAnswers());
+    }
+</script>
+
+</html>
